@@ -1,0 +1,11 @@
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/bin/Debug/net6.0/myGame
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/bin/Debug/net6.0/myGame.dll
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/bin/Debug/net6.0/myGame.pdb
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.csproj.AssemblyReference.cache
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.AssemblyInfoInputs.cache
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.AssemblyInfo.cs
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.csproj.CoreCompileInputs.cache
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.dll
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/refint/myGame.dll
+/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/Debug/net6.0/myGame.pdb
