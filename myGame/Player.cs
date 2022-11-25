@@ -30,5 +30,18 @@ public class Player
             Console.WriteLine("Impossible de s'attaquer soi-même !!");
         }
     }
+
+    public void Soigner(Player player, Soins soins)
+    {
+        if (this.Name == player.Name)
+        {
+            player.Pv = player.Pv + soins.Puissance;
+            
+        }
+        else
+        {
+            Console.WriteLine("Impossible de soigner l'adversaire !!");
+        }
+    }
     
 }
