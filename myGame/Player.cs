@@ -1,52 +1,34 @@
 namespace myGame;
 
+
+// Class player --------------------------------------------------------------------------------------------------------
 public class Player
 {
     // Attributs
-    public int Id;
     public string Name;
-    public int PV;
+    public int Pv;
     
     
     // Constructeur
-    public Player(string name, int pv, int id)
+    public Player(string name, int pv)
     {
-        this.Id = id;
         this.Name = name;
-        this.PV = pv;
+        this.Pv = pv;
     }
-
     
-    // Méthodes
-    public void bouleDeFeu(Player player)
+    
+    // Méthode attaquer
+    public void Attaquer(Player player, Attaque attaque)
     {
         if (this.Name != player.Name)
         {
-            player.PV = player.PV - 10;
+            player.Pv = player.Pv - attaque.Puissance;
+            
         }
-    }
-
-    public void rasengan(Player player)
-    {
-        if (this.Name != player.Name)
+        else
         {
-            player.PV = player.PV - 20;
-        }
-    }
-
-    public void soigner(Player player)
-    {
-        if (this.Name == player.Name)
-        {
-            player.PV = player.PV + 15;
+            Console.WriteLine("Impossible de s'attaquer soi-même !!");
         }
     }
     
-    public void defendre()
-    {
-        
-    }
-
-    
-
 }
