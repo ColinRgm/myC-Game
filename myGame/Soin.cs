@@ -2,7 +2,7 @@ namespace myGame;
 
 
 // Class Soins -------------------------------------------------------------------------------------------------------
-public class Soins
+public class Soin
 {
     
     // Attributs
@@ -11,7 +11,7 @@ public class Soins
 
     
     // Constructeur
-    public Soins(string technique, int puissance)
+    public Soin(string technique, int puissance)
     {
         this.Technique = technique;
         this.Puissance = puissance;

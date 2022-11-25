@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/myGame.csproj",
+      "projectUniqueName": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/myGame.csproj",
       "projectName": "myGame",
-      "projectPath": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/myGame.csproj",
+      "projectPath": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/myGame.csproj",
       "packagesPath": "/Users/colinregamey/.nuget/packages/",
-      "outputPath": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/",
+      "outputPath": "/Users/colinregamey/Documents/Général/Personnel/projetsWeb/C#/myGame/myGame/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/colinregamey/.nuget/NuGet/NuGet.Config"
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

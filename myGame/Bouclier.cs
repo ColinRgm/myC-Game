@@ -7,9 +7,10 @@ public class Bouclier
     public string Technique;
 
     
-    // Constructeur
+    /* Constructeur
     public Bouclier(string technique)
     {
         this.Technique = technique;
     }
+    */
 }

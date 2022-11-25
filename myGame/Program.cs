@@ -24,6 +24,7 @@ public class Program
         
         
         
+        
         // Création des attaques ---------------------------------------------------------------------------------------
         Attaque Rasengan = new Attaque("Rasengan", 15);
         Attaque Chidori = new Attaque("Eclair pourfendeur", 15);
@@ -32,15 +33,18 @@ public class Program
         
         
         
+        
         // Création des défenses ---------------------------------------------------------------------------------------
-        Soins Ramen = new Soins("Ichiraku ramen", 10);
-        Soins Autre = new Soins("Je sais pas encore", 10); // -----------------------------------------
+        Soin Ramen = new Soin("Ichiraku ramen", 10);
+        Soin Autre = new Soin("Je sais pas encore", 10); // -----------------------------------------
+        
         
         
         
         // Création du bouclier
-        Bouclier Bouclier = new Bouclier("Bouclier");
-        
+        Bouclier Shield = new Bouclier();
+
+
         
         
         // Boucler jusqu'à ce qu'un joueur arrive à 0 Pv ---------------------------------------------------------------
@@ -52,30 +56,35 @@ public class Program
             Console.WriteLine("[1] -> Katon || [2] -> Rasengan || [3] -> Amaterasu || [4] -> Chidori");
             Console.WriteLine("Soins :");
             Console.WriteLine("[5] -> Ramen");
+            Console.WriteLine("Défenses :");
+            Console.WriteLine("[6] -> Esquive");
             
-
             string choixJoueur = Console.ReadLine();
 
             switch (choixJoueur)
             {
                 case "1":
-                    player1.Attaquer(player2, Katon);
+                    player1.Attaque(player2, Katon);
                     break;
                 case "2":
-                    player1.Attaquer(player2, Rasengan);
+                    player1.Attaque(player2, Rasengan);
                     break;
                 case "3":
-                    player1.Attaquer(player2, Amaterasu);
+                    player1.Attaque(player2, Amaterasu);
                     break;
                 case "4":
-                    player1.Attaquer(player2, Chidori);
+                    player1.Attaque(player2, Chidori);
                     break;
                 case "5":
-                    player1.Soigner(player1, Ramen);
+                    player1.seSoigne(player1, Ramen);
+                    break;
+                case "6":
+                    player1.seDefend();
                     break;
             }
-            
+
             Console.WriteLine(" ");
+            
             
             
             
@@ -85,37 +94,43 @@ public class Program
             Console.WriteLine("[1] -> Katon || [2] -> Rasengan || [3] -> Amaterasu || [4] -> Chidori");
             Console.WriteLine("Soins :");
             Console.WriteLine("[5] -> Ramen");
+            Console.WriteLine("Défenses :");
+            Console.WriteLine("[6] -> Esquive");
 
             string choixJoueur2 = Console.ReadLine();
             
             switch (choixJoueur2)
             {
                 case "1":
-                    player2.Attaquer(player1, Katon);
+                    player2.Attaque(player1, Katon);
                     break;
                 case "2":
-                    player2.Attaquer(player1, Rasengan);
+                    player2.Attaque(player1, Rasengan);
                     break;
                 case "3":
-                    player2.Attaquer(player1, Amaterasu);
+                    player2.Attaque(player1, Amaterasu);
                     break;
                 case "4":
-                    player2.Attaquer(player1, Chidori);
+                    player2.Attaque(player1, Chidori);
                     break;
                 case "5":
-                    player2.Soigner(player2, Ramen);
+                    player2.seSoigne(player2, Ramen);
+                    break;
+                case "6":
+                    player2.seDefend();
                     break;
             }
+            
 
+            
+            // Combat de la vallée de la fin ---------------------------------------------------------------------------
             if (choixJoueur == "2" || choixJoueur2 == "4")
             {
                 player1.Pv = player1.Pv / 2;
                 player2.Pv = player2.Pv / 2;
             }
             
-            // Condition qui vérifie si l'un des joueurs à utilié un bouclier
-            // if player.bouclier
-            // return pas de dégat
+            
             
             
             
@@ -125,6 +140,7 @@ public class Program
             Console.WriteLine(" ");
             Console.WriteLine("-------------------------------------------------");
             Console.WriteLine(" ");
+            
             
             
             
@@ -141,6 +157,12 @@ public class Program
             {
                 Console.WriteLine("Egalité !");
             }
+            
+            
+            
+            // Seter bouclier à zéro
+            player1.PossedeBouclier = 0;
+            player2.PossedeBouclier = 0;
         }
     }
 }

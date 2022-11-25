@@ -7,6 +7,7 @@ public class Player
     // Attributs
     public string Name;
     public int Pv;
+    public int PossedeBouclier;
     
     
     // Constructeur
@@ -14,16 +15,20 @@ public class Player
     {
         this.Name = name;
         this.Pv = 75;
+
+        this.PossedeBouclier = 0;
     }
     
     
     // Méthode attaquer
-    public void Attaquer(Player player, Attaque attaque)
+    public void Attaque(Player player, Attaque attaque)
     {
         if (this.Name != player.Name)
         {
-            player.Pv = player.Pv - attaque.Puissance;
-            
+            if (player.PossedeBouclier != 1)
+            {
+                player.Pv = player.Pv - attaque.Puissance;
+            }
         }
         else
         {
@@ -31,11 +36,13 @@ public class Player
         }
     }
 
-    public void Soigner(Player player, Soins soins)
+    
+    // Méthode soigner
+    public void seSoigne(Player player, Soin soin)
     {
         if (this.Name == player.Name)
         {
-            player.Pv = player.Pv + soins.Puissance;
+            player.Pv = player.Pv + soin.Puissance;
             
         }
         else
@@ -43,5 +50,13 @@ public class Player
             Console.WriteLine("Impossible de soigner l'adversaire !!");
         }
     }
+
+
+    // Méthode defendre
+    public void seDefend()
+    {
+        this.PossedeBouclier = 1;
+    }
+
     
 }
