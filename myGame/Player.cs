@@ -10,10 +10,10 @@ public class Player
     
     
     // Constructeur
-    public Player(string name, int pv)
+    public Player(string name)
     {
         this.Name = name;
-        this.Pv = pv;
+        this.Pv = 75;
     }
     
     
